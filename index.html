@@ -16,24 +16,203 @@
 
         <!-- Header -->
         <header class="header">
-            <div class="container">
+            <div class="container header-container">
                 <a href="/" class="header-logo">
                     <img src="./assets/images/logo.svg" alt="">
                 </a>
+                <ul class="header-navs">
+                    <li>
+                        <a href="#" class="header-navs__link">
+                            <span>Продукт</span>
+                            <img src="./assets/images/chevron-down.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-navs__link">Тарифный план</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-navs__link">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-navs__link">Возможности</a>
+                    </li>
+                </ul>
+                <div class="header-right">
+                    <a href="#" class="btn-white">Войти</a>
+                    <a href="#" class="btn-pink">Регистрация</a>
+                </div>
+                <button class="bars">
+                    <img src="./assets/images/bars.svg" alt="">
+                </button>
             </div>
         </header>
         <!-- Header end -->
+
+        <!-- Menu -->
+        <section class="menu">
+            <div>
+                <div class="menu-head">
+                    <a href="/" class="menu-logo">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <button class="menu-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="menu-navs">
+                    <li>
+                        <a href="#" class="menu-navs__link">
+                            <span>Продукт</span>
+                            <img src="./assets/images/chevron-down.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-navs__link">Тарифный план</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-navs__link">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-navs__link">Возможности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-bottom">
+                <a href="#" class="btn-white">Войти</a>
+                <a href="#" class="btn-pink">Регистрация</a>
+            </div>
+        </section>
+        <!-- Menu end -->
     
         <main>
 
             <!-- Home -->
             <section class="home">
-                <div class="container">
-                    <button class="btn-pink">Найти учеников</button>
-                    <button class="btn-white">Попробовать</button>
+                <img src="./assets/images/home-bg.png" alt="" class="home-bg">
+                <div class="container home-container">
+                    <h1 class="home-title">Преподавание <br>без сложностей</h1>
+                    <img src="./assets/images/home-line.svg" alt="" class="line">
+                    <p class="home-description">Находите учеников, управляйте расписанием и сосредоточьтесь на главном — обучении.</p>
+                    <div class="home-bottom">
+                        <a href="#" class="btn-pink">
+                            <span>Начать бесплатно</span>
+                            <span class="imgs">
+                                <span class="icon">
+                                    <img src="./assets/images/plus-pink.svg" alt="">
+                                </span>
+                                <img src="./assets/images/home-img-1.png" alt="" class="img">
+                                <img src="./assets/images/home-img-2.png" alt="" class="img">
+                                <img src="./assets/images/home-img-3.png" alt="" class="img">
+                            </span>
+                        </a>
+                        <p>
+                            или <a href="#">узнать больше ›</a>
+                        </p>
+                    </div>
+                    <img src="./assets/images/home-card.png" alt="" class="home-card">
                 </div>
             </section>
             <!-- Home end -->
+
+            <!-- Partners -->
+            <section class="partners">
+                <img src="./assets/images/partners-bg.png" alt="" class="partners-bg">
+                <div class="container partners-container">
+                    <ul>
+                        <li>
+                            <img src="./assets/images/partners-1.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partners-2.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partners-3.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partners-4.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partners-5.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Partners end -->
+
+            <!-- Choose -->
+            <section class="choose">
+                <div class="container">
+                    <h2 class="choose-title">Почему <span>выбирают нас?</span></h2>
+                    <p class="choose-description">Присоединяйтесь к сообществу успешных преподавателей и расширьте свои возможности!</p>
+                    <ul class="choose-card__wrap">
+                        <li class="choose-card">
+                            <div class="icon">
+                                <img src="./assets/images/choose-card-icon-1.svg" alt="">
+                            </div>
+                            <h3>Все ученики под контролем</h3>
+                            <p>Удобная система для ведения базы учеников, отслеживания успеваемости в одном месте</p>
+                        </li>
+                        <li class="choose-card">
+                            <div class="icon">
+                                <img src="./assets/images/choose-card-icon-2.svg" alt="">
+                            </div>
+                            <h3>Ваши материалы</h3>
+                            <p>Храните планы уроков, учебные материалы и файлы в единой библиотеке с удобным доступом</p>
+                        </li>
+                        <li class="choose-card">
+                            <div class="icon">
+                                <img src="./assets/images/choose-card-icon-3.svg" alt="">
+                            </div>
+                            <h3>Отслеживайте прогресс </h3>
+                            <p>Отмечайте пройденные темы и формируйте понятные отчёты для себя и родителей.</p>
+                        </li>
+                        <li class="choose-card">
+                            <div class="icon">
+                                <img src="./assets/images/choose-card-icon-4.svg" alt="">
+                            </div>
+                            <h3>Надежная связь</h3>
+                            <p>Вся переписка в одном месте, автоматические напоминания о предстоящих уроках и оплате</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Choose end -->
+
+            <!-- About -->
+            <section class="about">
+                <img src="./assets/images/about-bg.png" alt="" class="about-bg">
+                <img src="./assets/images/about-bg-mb.png" alt="" class="about-bg mb">
+                <div class="container about-container">
+                    <div class="about-head">
+                        <div class="main-img">
+                            <img src="./assets/images/about-main-card-1.png" alt="" class="main-img__item">
+                            <img src="./assets/images/about-main-card-1.png" alt="" class="main-img__item">
+                            <img src="./assets/images/about-icon-1.svg" alt="" class="icon">
+                            <p class="alert">
+                                <img src="./assets/images/about-icon-2.svg" alt="">
+                                <span> Учите. Зарабатывайте. Развивайтесь</span>
+                            </p>
+                        </div>
+                        <h3>Почему нас выбирают лучшие преподаватели?</h3>
+                        <p>Мы создали платформу, которая по-настоящему помогает вам развиваться и сосредоточиться на главном – преподавании. Мы активно привлекаем тысячи потенциальных учеников со всей страны/города, которые ищут именно ваши знания и опыт. </p>
+                        <a href="#" class="btn-pink">Подробнее</a>
+                    </div>
+                    <div class="about-bottom">
+                        <div class="main-img">
+                            <img src="./assets/images/about-card-2.png" alt="" class="main-img__item">
+                            <img src="./assets/images/about-card-2.png" alt="" class="main-img__item">
+                            <img src="./assets/images/about-icon-3.svg" alt="" class="icon">
+                            <div class="icon-2"></div>
+                        </div>
+                        <h3>Надежный доход <br> и гарантия оплаты</h3>
+                        <p>Больше никаких задержек или сложностей с расчётами. Наша система обеспечивает своевременное и безопасное получение оплаты за каждый проведённый вами урок.</p>
+                        <a href="#" class="btn-pink">Найти учеников</a>
+                    </div>
+                </div>
+            </section>
+            <!-- About end -->
 
         </main>
 
