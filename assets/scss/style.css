@@ -142,6 +142,301 @@ body {
   background: #fce7fd;
 }
 
+.tarif {
+  padding: 180px 0;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .tarif {
+    padding: 60px 0 0 0;
+  }
+}
+.tarif_title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 993px) {
+  .tarif_title {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+}
+.tarif_title h3 {
+  font-family: "Geologica", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 140%;
+  color: #1E1D4C;
+}
+@media screen and (max-width: 993px) {
+  .tarif_title h3 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
+.tarif_title p {
+  font-family: "Geologica", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  color: #A6A6A6;
+}
+@media screen and (max-width: 993px) {
+  .tarif_title p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+.tarif_cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  max-width: 772px;
+  margin: auto;
+  z-index: 2;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_cards {
+    padding-top: 150px;
+  }
+}
+@media screen and (max-width: 993px) {
+  .tarif_cards {
+    flex-direction: column-reverse;
+    gap: 16px;
+    padding-top: 0;
+  }
+}
+.tarif_card {
+  width: 374px;
+  padding: 42px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 1.67px 2.84px 0px rgba(0, 0, 0, 0.0039215686);
+  box-shadow: 0px 7.35px 5.88px 0px rgba(0, 0, 0, 0.0078431373), 0px 18.05px 11.73px 0px rgba(0, 0, 0, 0.0117647059), 0px 34.76px 22.99px 0px rgba(0, 0, 0, 0.0117647059), 0px 58.49px 42.28px 0px rgba(0, 0, 0, 0.0156862745), 0px 90.24px 72.19px 0px rgba(0, 0, 0, 0.0196078431);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (max-width: 993px) {
+  .tarif_card {
+    width: 100%;
+    border-radius: 17px;
+  }
+}
+.tarif_card_title {
+  text-align: center;
+}
+.tarif_card_title h3 {
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  color: #1E1D4C;
+  margin-bottom: 8px;
+}
+.tarif_card_title p {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #A6A6A6;
+}
+.tarif_card_price {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.tarif_card_price h6 {
+  font-family: "Geologica", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 140%;
+  color: #1E1D4C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.tarif_card_price h6 span {
+  font-family: "Geologica", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #A6A6A6;
+  transform: translateY(10px);
+}
+.tarif_card_price .discount {
+  padding: 10px 12px;
+  border-radius: 1000px;
+  background: #E579E8;
+  font-family: "Geologica", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+}
+.tarif_card ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #FAF9FB;
+  padding: 32px;
+  border-radius: 10px;
+}
+.tarif_card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tarif_card ul li img {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.tarif_card ul li span {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #1E1D4C;
+}
+.tarif_card ul a {
+  margin-top: auto;
+  font-family: "Geologica", sans-serif;
+}
+.tarif_card_pink {
+  background-image: url("../images/card_pink_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 0;
+  position: relative;
+}
+.tarif_card_pink .circle {
+  position: absolute;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(166deg, #92a7ff 0%, #b37de9 100%);
+  border-radius: 50%;
+  display: none;
+}
+.tarif_card_pink .tarif_card_title {
+  position: relative;
+  z-index: 2;
+}
+.tarif_card_pink .tarif_card_title h3, .tarif_card_pink .tarif_card_title p {
+  color: #fff;
+}
+.tarif_card_pink .tarif_card_price {
+  position: relative;
+  z-index: 2;
+  margin: 32px 0 20px 0;
+}
+.tarif_card_pink .tarif_card_price h6 {
+  color: #fff;
+}
+.tarif_card_pink .tarif_card_price h6 span {
+  color: #fff;
+}
+.tarif_card_pink ul {
+  position: relative;
+  z-index: 2;
+}
+.tarif_card_reating {
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+  position: absolute;
+  bottom: 218px;
+  right: -200px;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_card_reating {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_reating {
+    position: static;
+    margin-bottom: 16px;
+    gap: 20px;
+  }
+}
+.tarif_card_reating .star {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.tarif_card_reating h6 {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #1E1D4C;
+  margin: 18px 0 15px 0;
+}
+.tarif_card_reating h6 b {
+  font-weight: 700;
+}
+.tarif_card_reating p {
+  font-family: "Geologica", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #A6A6A6;
+}
+.tarif .container {
+  position: relative;
+}
+.tarif .tarif_img {
+  position: absolute;
+  left: -444px;
+  bottom: -210px;
+  width: 670px;
+  height: 642px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 1200px) {
+  .tarif .tarif_img {
+    position: static;
+    transform: translateY(20px);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 993px) {
+  .tarif .tarif_img {
+    min-width: 437px;
+    min-height: 419px;
+    width: 437px;
+    height: 419px;
+    display: flex;
+    flex-shrink: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 460px) {
+  .tarif .tarif_img {
+    transform: translate(-80px, 10px);
+  }
+}
+
 .footer {
   padding: 100px 0;
   background: #FCF9FF;
