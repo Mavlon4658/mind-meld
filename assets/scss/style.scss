@@ -39,7 +39,7 @@ body {
         border-radius: 50px;
         box-shadow: 0px 9px 20px -3px rgba(239, 84, 247, 0.33);
         transition: .3s ease-in-out all;
-        
+
         &:hover {
             background: #d371d6;
         }
@@ -62,7 +62,7 @@ body {
         color: #7454bd;
         border-radius: 60px;
         transition: .3s ease-in-out all;
-        
+
         &:hover {
             background: #fce7fd;
         }
@@ -394,6 +394,322 @@ body {
     }
 }
 // Home end
+
+// tarif
+.tarif {
+    padding: 180px 0;
+    overflow: hidden;
+
+    @include media(1200) {
+        padding: 60px 0 0 0;
+    }
+
+    &_title {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        @include media(993) {
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: $font-geologica;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 140%;
+            color: #1E1D4C;
+
+            @include media(993) {
+                font-size: 28px;
+                line-height: 140%;
+            }
+        }
+
+        p {
+            font-family: $font-geologica;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 140%;
+            color: #A6A6A6;
+
+            @include media(993) {
+                font-size: 14px;
+                line-height: 140%;
+            }
+        }
+    }
+
+    &_cards {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        position: relative;
+        max-width: 772px;
+        margin: auto;
+        z-index: 2;
+
+        @include media(1200) {
+            padding-top: 150px;
+        }
+
+        @include media(993) {
+            flex-direction: column-reverse;
+            gap: 16px;
+            padding-top: 0;
+        }
+    }
+
+    &_card {
+        width: 374px;
+        padding: 42px 20px 20px 20px;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0px 1.67px 2.84px 0px #00000001;
+        box-shadow: 0px 7.35px 5.88px 0px #00000002, 0px 18.05px 11.73px 0px #00000003, 0px 34.76px 22.99px 0px #00000003, 0px 58.49px 42.28px 0px #00000004, 0px 90.24px 72.19px 0px #00000005;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        @include media(993) {
+            width: 100%;
+            border-radius: 17px;
+        }
+
+        &_title {
+            text-align: center;
+
+            h3 {
+                font-family: $font-geologica;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 140%;
+                color: #1E1D4C;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-family: $font-geologica;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                color: #A6A6A6;
+            }
+        }
+
+        &_price {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 6px;
+
+            h6 {
+                font-family: $font-geologica;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 140%;
+                color: #1E1D4C;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+
+                span {
+                    font-family: $font-geologica;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: #A6A6A6;
+                    transform: translateY(10px);
+                }
+            }
+
+            .discount {
+                padding: 10px 12px;
+                border-radius: 1000px;
+                background: #E579E8;
+                font-family: $font-geologica;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 140%;
+                color: #fff;
+            }
+        }
+
+        ul {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background: #FAF9FB;
+            padding: 32px;
+            border-radius: 10px;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    display: flex;
+                    align-items: center;
+                    flex-shrink: 0;
+                }
+
+                span {
+                    font-family: $font-geologica;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: #1E1D4C;
+                }
+            }
+
+            a {
+                margin-top: auto;
+                font-family: $font-geologica;
+            }
+        }
+    }
+
+    &_card_pink {
+        // background: linear-gradient(91.71deg, #92A7FF -38.83%, #B37DE9 111.41%);
+        background-image: url('../images/card_pink_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        gap: 0;
+        position: relative;
+
+        .circle {
+            position: absolute;
+            z-index: 1;
+            flex-shrink: 0;
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(166deg, #92a7ff 0%, #b37de9 100%);
+            border-radius: 50%;
+            display: none;
+        }
+
+        .tarif_card_title {
+            position: relative;
+            z-index: 2;
+            h3, p {
+                color: #fff;
+            }
+        }
+
+        .tarif_card_price {
+            position: relative;
+            z-index: 2;
+            margin: 32px 0 20px 0;
+
+            h6 {
+                color: #fff;
+
+                span {
+                    color: #fff;
+                }
+            }
+        }
+
+        ul {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &_card_reating {
+        display: flex;
+        flex-direction: column;
+        gap: 66px;
+        position: absolute;
+        bottom: 218px;
+        right: -200px;
+
+        @include media(1200) {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        @include media(993) {
+            position: static;
+            margin-bottom: 16px;
+            gap: 20px;
+        }
+
+        .star {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        h6 {
+            font-family: $font-geologica;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #1E1D4C;
+            margin: 18px 0 15px 0;
+
+            b {
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-family: $font-geologica;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            color: #A6A6A6;
+        }
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .tarif_img {
+        position: absolute;
+        left: -444px;
+        bottom: -210px;
+        width: 670px;
+        height: 642px;
+        object-fit: contain;
+
+        @include media(1200) {
+            position: static;
+            transform: translateY(20px);
+            width: 100%;
+        }
+
+        @include media(993) {
+            min-width: 437px;
+            min-height: 419px;
+            width: 437px;
+            height: 419px;
+            display: flex;
+            flex-shrink: 0;
+            margin: auto;
+        }
+
+        @include media(460) {
+            transform: translate(-80px, 10px);
+        }
+    }
+}
+// tarif
 
 // Partners
 .partners {
@@ -927,5 +1243,126 @@ body {
 // About end
 
 // Footer
-.footer {}
+.footer {
+    padding: 100px 0;
+    background: #FCF9FF;
+
+    @include media(993) {
+        padding: 40px 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 32px;
+
+        @include media(993) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &_logo {
+        p {
+            font-family: $font-geologica;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 140%;
+            color: #5E6282;
+            margin-top: 12px;
+        }
+    }
+
+    &_blocks {
+        display: flex;
+        align-items: start;
+        gap: 60px;
+
+        @include media(1200) {
+            gap: 32px;
+        }
+
+        @include media(768) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &_block {
+        h6 {
+            font-family: $font-geologica;
+            font-weight: 700;
+            font-size: 18px;
+            color: #1E1D4C;
+            margin-bottom: 27px;
+
+            @include media(768) {
+                margin-bottom: 12px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                font-family: $font-geologica;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #5E6282;
+            }
+        }
+    }
+
+    &_contact {
+        .social_media {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+
+            @include media(768) {
+                justify-content: center;
+            }
+
+            a {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                background: #fff;
+                box-shadow: 0px 1.8px 9.02px 0px #0000001A;
+            }
+        }
+
+        p {
+            font-family: $font-geologica;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #5E6282;
+            margin: 24px 0 17px 0;
+
+            @include media(768) {
+                text-align: center;
+            }
+        }
+
+        .market_link {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            @include media(768) {
+                justify-content: center;
+            }
+        }
+    }
+}
 // Footer end
