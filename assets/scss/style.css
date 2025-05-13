@@ -140,4 +140,119 @@ body {
 }
 .btn-white:hover {
   background: #fce7fd;
+}
+
+.footer {
+  padding: 100px 0;
+  background: #FCF9FF;
+}
+@media screen and (max-width: 993px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
+.footer .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 32px;
+}
+@media screen and (max-width: 993px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer_logo p {
+  font-family: "Geologica", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  color: #5E6282;
+  margin-top: 12px;
+}
+.footer_blocks {
+  display: flex;
+  align-items: start;
+  gap: 60px;
+}
+@media screen and (max-width: 1200px) {
+  .footer_blocks {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer_blocks {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.footer_block h6 {
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1E1D4C;
+  margin-bottom: 27px;
+}
+@media screen and (max-width: 768px) {
+  .footer_block h6 {
+    margin-bottom: 12px;
+  }
+}
+.footer_block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer_block ul a {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #5E6282;
+}
+.footer_contact .social_media {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+@media screen and (max-width: 768px) {
+  .footer_contact .social_media {
+    justify-content: center;
+  }
+}
+.footer_contact .social_media a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 0px 1.8px 9.02px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.footer_contact p {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #5E6282;
+  margin: 24px 0 17px 0;
+}
+@media screen and (max-width: 768px) {
+  .footer_contact p {
+    text-align: center;
+  }
+}
+.footer_contact .market_link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+@media screen and (max-width: 768px) {
+  .footer_contact .market_link {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */

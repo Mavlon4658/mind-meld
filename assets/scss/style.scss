@@ -39,7 +39,7 @@ body {
         border-radius: 50px;
         box-shadow: 0px 9px 20px -3px rgba(239, 84, 247, 0.33);
         transition: .3s ease-in-out all;
-        
+
         &:hover {
             background: #d371d6;
         }
@@ -62,7 +62,7 @@ body {
         color: #7454bd;
         border-radius: 60px;
         transition: .3s ease-in-out all;
-        
+
         &:hover {
             background: #fce7fd;
         }
@@ -78,5 +78,126 @@ body {
 // Home end
 
 // Footer
-.footer {}
+.footer {
+    padding: 100px 0;
+    background: #FCF9FF;
+
+    @include media(993) {
+        padding: 40px 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 32px;
+
+        @include media(993) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &_logo {
+        p {
+            font-family: $font-geologica;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 140%;
+            color: #5E6282;
+            margin-top: 12px;
+        }
+    }
+
+    &_blocks {
+        display: flex;
+        align-items: start;
+        gap: 60px;
+
+        @include media(1200) {
+            gap: 32px;
+        }
+
+        @include media(768) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &_block {
+        h6 {
+            font-family: $font-geologica;
+            font-weight: 700;
+            font-size: 18px;
+            color: #1E1D4C;
+            margin-bottom: 27px;
+
+            @include media(768) {
+                margin-bottom: 12px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                font-family: $font-geologica;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #5E6282;
+            }
+        }
+    }
+
+    &_contact {
+        .social_media {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+
+            @include media(768) {
+                justify-content: center;
+            }
+
+            a {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                background: #fff;
+                box-shadow: 0px 1.8px 9.02px 0px #0000001A;
+            }
+        }
+
+        p {
+            font-family: $font-geologica;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #5E6282;
+            margin: 24px 0 17px 0;
+
+            @include media(768) {
+                text-align: center;
+            }
+        }
+
+        .market_link {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            @include media(768) {
+                justify-content: center;
+            }
+        }
+    }
+}
 // Footer end
