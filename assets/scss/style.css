@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+span, label {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input, textarea {
+  outline: none;
+  border: 0;
+  background: transparent;
+  font-weight: 400;
+}
+
+button, select {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: 0;
+  font-weight: 400;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100svh;
+}
+
+ul, ol, dl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/Muller/Muller-Trial-Regular.ttf") format("truetype"), url("../fonts/Muller/Muller-Trial-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/Muller/Muller-Trial-Medium.ttf") format("truetype"), url("../fonts/Muller/Muller-Trial-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background: white;
+  color: black;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  background: white;
+  color: #272D4E;
+}
+
+.container {
+  max-width: 1320px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.btn-pink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 64px;
+  padding: 0 52px;
+  background: #E579E8;
+  color: white;
+  font-family: "Volkhov", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  border-radius: 50px;
+  box-shadow: 0px 9px 20px -3px rgba(239, 84, 247, 0.33);
+  transition: 0.3s ease-in-out all;
+}
+.btn-pink:hover {
+  background: #d371d6;
+}
+.btn-white {
+  box-shadow: 0 9px 20px -3px rgba(215, 215, 215, 0.33);
+  background: #fff;
+  font-family: "Geologica", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  height: 68px;
+  padding: 0 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #7454bd;
+  border-radius: 60px;
+  transition: 0.3s ease-in-out all;
+}
+.btn-white:hover {
+  background: #fce7fd;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/Muller/Muller-Trial-Regular.ttf')  format('truetype'),
+        url("../fonts/Muller/Muller-Trial-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/Muller/Muller-Trial-Medium.ttf')  format('truetype'),
+        url("../fonts/Muller/Muller-Trial-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
+$font-inter: "Inter", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$font-geologica: "Geologica", sans-serif;
+$font-volkhov: "Volkhov", serif;
+$font-nunito-sans: "Nunito Sans", sans-serif;
+$font-rubik: "Rubik", sans-serif;
+$font-muller: "Muller", sans-serif;
+// Fonts end
+
+// Colors
+// Colors end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}

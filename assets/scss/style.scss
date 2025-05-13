@@ -1,0 +1,82 @@
+@import './normalize',
+        './global';
+
+* {
+    font-family: $font-inter;
+    font-weight: 400;
+}
+
+body {
+    background: white;
+    color: black;
+    font-weight: 400;
+    font-family: $font-inter;
+    background: white;
+    color: #272D4E;
+}
+
+.container {
+    max-width: 1320px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.btn {
+    &-pink {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 64px;
+        padding: 0 52px;
+        background: #E579E8;
+        color: white;
+        font-family: $font-volkhov;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        border-radius: 50px;
+        box-shadow: 0px 9px 20px -3px rgba(239, 84, 247, 0.33);
+        transition: .3s ease-in-out all;
+        
+        &:hover {
+            background: #d371d6;
+        }
+    }
+
+    &-white {
+        box-shadow: 0 9px 20px -3px rgba(215, 215, 215, 0.33);
+        background: #fff;
+        font-family: $font-geologica;
+        font-weight: 600;
+        font-size: 18px;
+        height: 68px;
+        padding: 0 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        color: #7454bd;
+        border-radius: 60px;
+        transition: .3s ease-in-out all;
+        
+        &:hover {
+            background: #fce7fd;
+        }
+    }
+}
+
+// Header
+.header {}
+// Header end
+
+// Home
+.home {}
+// Home end
+
+// Footer
+.footer {}
+// Footer end
