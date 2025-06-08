@@ -1244,6 +1244,7 @@ body {
 
 // dashboard
 .dashboard {
+    overflow: hidden;
 
     .container {
         display: flex;
@@ -1519,7 +1520,7 @@ body {
     }
 
     &_content {
-        width: 100%;
+        width: calc(100% - 454px - 100px);
         padding: 32px 40px;
         background: #F9F4FE;
 
@@ -1821,6 +1822,329 @@ body {
         }
     }
 
+    .slider {
+        width: 100%;
+    }
+
+    .swiperCourse {
+        max-width: 1740px;
+        width: 100%;
+        // display: none;
+        margin: 0 0 15px 0;
+
+        .course_title {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h3 {
+                font-family: $font-geologica;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 140%;
+                color: #2B3674;
+            }
+
+            .course_btns {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                button {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        .course_card {
+            padding: 12px;
+            background: #fff;
+            border-radius: 20px;
+
+            &_img {
+                position: relative;
+
+                img {
+                    border-radius: 12px;
+                    width: 100%;
+                }
+
+                .heart_icon {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    border-radius: 50%;
+                    background: #CCCCCC80;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            &_text {
+                span {
+                    font-family: $font-geologica;
+                    font-weight: 400;
+                    font-size: 8px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: #7854F7;
+                    border-radius: 8px;
+                    padding: 2px 12px;
+                    background: #F9F4FE;
+                }
+
+                h3 {
+                    font-family: $font-geologica;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: #2B3674;
+                    margin: 10px 0;
+                }
+
+                .progress {
+                    margin-bottom: 10px;
+                    border-radius: 50px;
+                    width: 100%;
+                    height: 6px;
+                    background: #F4F4F4;
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 20%;
+                        height: 100%;
+                        border-radius: 20px;
+                        background: linear-gradient(87.01deg, #92A7FF -6.75%, #B37DE9 94.2%);
+                    }
+                }
+
+                .course_user {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                    }
+
+                    b {
+                        font-family: $font-geologica;
+                        font-weight: 500;
+                        font-size: 10px;
+                        line-height: 140%;
+                        text-transform: capitalize;
+                        color: #2B3674;
+
+                        span {
+                            display: block;
+                            margin-top: 4px;
+                            font-family: $font-geologica;
+                            font-weight: 400;
+                            font-size: 8px;
+                            line-height: 140%;
+                            text-transform: capitalize;
+                            color: #707EAE;
+                            padding: 0;
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .profil {
+        width: 454px;
+        flex-shrink: 0;
+        padding: 32px 24px;
+        box-shadow: 0px 14px 42px 0px #080F340F;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        &_head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                font-family: $font-geologica;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                color: #2B3674;
+            }
+        }
+
+        &_user {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: center;
+
+            h3 {
+                font-family: $font-geologica;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                color: #2B3674;
+                margin-bottom: 6px;
+            }
+
+            p {
+                font-family: $font-geologica;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 140%;
+                color: #707EAE;
+                text-align: center;
+            }
+
+            &_btns {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+
+                button {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 5px solid #FAFAFC;
+                    background: #fff;
+                    opacity: 80%;
+                    box-shadow: 0px 3.77px 18.11px 0px #282B6F26;
+
+                    .icon {
+                        width: 31px;
+                        height: 31px;
+                        box-shadow: 0px 3.77px 18.11px 0px #282B6F26;
+                        background: #fff;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+
+        .chart {
+            width: 204px;
+            height: 116px;
+            margin: 0 auto;
+        }
+
+        &_list {
+            &_head {
+                margin-bottom: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+
+                h3 {
+                    font-family: $font-geologica;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #2B3674;
+                }
+            }
+
+            ul {
+
+                li {
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 20px;
+                    padding: 16px 12px;
+                    border-bottom: 1px solid #D8D8D8;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+
+                .list_left {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                    }
+
+                    span {
+                        font-family: $font-geologica;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 140%;
+                        text-transform: capitalize;
+                        color: #2B3674;
+
+                        b {
+                            margin-top: 4px;
+                            display: block;
+                            font-family: $font-geologica;
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 140%;
+                            text-transform: capitalize;
+                            color: #707EAE;
+                        }
+                    }
+                }
+
+                a {
+                    padding: 0;
+                    width: max-content;
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    font-family: $font-geologica;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 140%;
+                    background: #7854F7;
+                    color: #fff;
+                }
+            }
+
+            .list_link {
+                border-radius: 40px;
+                padding: 8px 32px;
+                background: #702DFF33;
+                font-family: $font-geologica;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 140%;
+                color: #702DFF;
+                margin-top: 12px;
+            }
+        }
+    }
 }
 // dashboard
 

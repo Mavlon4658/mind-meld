@@ -16,16 +16,38 @@ if (phoneInp.length) {
     });
 }
 
-const menu = document.querySelector('.menu');
-const bars = document.querySelector('.header .bars');
-const menuClose = document.querySelector('.menu-close');
+const menu = document.querySelector(".menu");
+const bars = document.querySelector(".header .bars");
+const menuClose = document.querySelector(".menu-close");
 
-bars.onclick = () => {
-    menu.classList.add('active');
-    bodyHidden();
+if (menu && bars) {
+    bars.addEventListener("click", () => {
+        menu.classList.add("active");
+        if (typeof bodyHidden === "function") bodyHidden();
+    });
+    }
+
+    if (menu && menuClose) {
+    menuClose.addEventListener("click", () => {
+        menu.classList.remove("active");
+        if (typeof bodyVisible === "function") bodyVisible();
+    });
 }
 
-menuClose.onclick = () => {
-    menu.classList.remove('active');
-    bodyVisible();
-}
+
+var swiper = new Swiper(".swiperCourse", {
+    slidesPerView: 1.4,
+    spaceBetween: 18,
+    navigation: {
+        nextEl: ".course-button-next",
+        prevEl: ".course-button-prev",
+    },
+    breakpoints: {
+        993: {
+        slidesPerView: 2,
+        },
+        1200: {
+        slidesPerView: 3,
+        },
+    },
+});
