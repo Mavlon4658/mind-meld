@@ -1261,6 +1261,27 @@ body {
   width: 100%;
   max-width: 1920px;
 }
+@media screen and (max-width: 1200px) {
+  .dashboard .container {
+    flex-direction: column;
+  }
+}
+.dashboard .aside_bg {
+  left: -100%;
+  position: fixed;
+  top: 0;
+  transition: 0.2s ease;
+}
+.dashboard .aside_bg.active {
+  display: block;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(74, 64, 88, 0.1);
+  z-index: 4;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
 .dashboard .aside {
   overflow: hidden;
   padding: 50px 26px;
@@ -1273,20 +1294,66 @@ body {
   width: 100px;
   flex-shrink: 0;
 }
+@media screen and (max-width: 1200px) {
+  .dashboard .aside {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    background: #fff;
+    z-index: 5;
+    left: -100%;
+    padding: 50px 20px;
+  }
+}
+.dashboard .aside.active {
+  left: 0;
+}
+@media screen and (max-width: 1200px) {
+  .dashboard .aside_top {
+    width: 100%;
+    display: block;
+  }
+}
 .dashboard .aside .dashboard_logo span {
   display: none;
+}
+@media screen and (max-width: 1200px) {
+  .dashboard .aside .dashboard_logo span {
+    display: flex;
+  }
 }
 .dashboard .aside ul .link_name {
   display: none;
 }
+@media screen and (max-width: 1200px) {
+  .dashboard .aside ul .link_name {
+    display: block;
+  }
+}
 .dashboard .aside ul .arrow_icon {
   display: none;
+}
+@media screen and (max-width: 1200px) {
+  .dashboard .aside ul .arrow_icon {
+    display: block;
+  }
 }
 .dashboard .aside .user_link span {
   display: none;
 }
+@media screen and (max-width: 1200px) {
+  .dashboard .aside .user_link span {
+    display: block;
+  }
+}
 .dashboard .aside:hover {
   width: 300px;
+}
+@media screen and (max-width: 1200px) {
+  .dashboard .aside:hover {
+    width: 80%;
+  }
 }
 .dashboard .aside:hover .dashboard_logo span {
   display: flex;
@@ -1302,22 +1369,6 @@ body {
 }
 .dashboard .aside_bottom {
   width: 100%;
-}
-.dashboard .aside.active {
-  width: 288px;
-  padding: 50px 26px;
-}
-.dashboard .aside.active .dashboard_logo span {
-  display: none;
-}
-.dashboard .aside.active ul .link_name {
-  display: none;
-}
-.dashboard .aside.active ul .arrow_icon {
-  display: none;
-}
-.dashboard .aside.active .user_link span {
-  display: none;
 }
 .dashboard_logo {
   display: flex;
@@ -1340,6 +1391,33 @@ body {
 }
 .dashboard_logo span span {
   color: #7854F7;
+}
+.dashboard .media_head {
+  display: none;
+  padding: 16px 20px;
+}
+@media screen and (max-width: 1200px) {
+  .dashboard .media_head {
+    display: flex;
+  }
+}
+.dashboard .media_head .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.dashboard .media_head .dashboard_logo img {
+  width: 38px;
+  height: 32px;
+}
+.dashboard .media_head .dashboard_logo span {
+  font-size: 24px;
+}
+.dashboard .media_head .user_link img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 .dashboard .line {
   margin: 32px 0;
@@ -1451,6 +1529,11 @@ body {
 @media screen and (max-width: 1400px) {
   .dashboard_content {
     padding: 24px 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .dashboard_content {
+    width: 100%;
   }
 }
 .dashboard_content_head {
@@ -1749,6 +1832,11 @@ body {
   width: 100%;
   margin: 0 0 15px 0;
 }
+@media screen and (max-width: 1200px) {
+  .dashboard .swiperCourse {
+    overflow: visible;
+  }
+}
 .dashboard .swiperCourse .course_title {
   margin-bottom: 20px;
   display: flex;
@@ -1865,7 +1953,8 @@ body {
   background: transparent;
 }
 .dashboard .profil {
-  width: 454px;
+  flex: 1;
+  width: 100%;
   flex-shrink: 0;
   padding: 32px 24px;
   box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.0588235294);
@@ -1884,6 +1973,9 @@ body {
   font-size: 16px;
   line-height: 140%;
   color: #2B3674;
+}
+.dashboard .profil_head svg {
+  cursor: pointer;
 }
 .dashboard .profil_user {
   display: flex;
@@ -1959,6 +2051,9 @@ body {
   line-height: 140%;
   color: #2B3674;
 }
+.dashboard .profil_list_head svg {
+  cursor: pointer;
+}
 .dashboard .profil_list ul li {
   height: auto;
   display: flex;
@@ -2023,6 +2118,16 @@ body {
   line-height: 140%;
   color: #702DFF;
   margin-top: 12px;
+}
+@media screen and (max-width: 1200px) {
+  .dashboard .profil_list .list_link {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer {

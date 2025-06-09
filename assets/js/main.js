@@ -1,3 +1,20 @@
+
+let burgerBtn = document.querySelector('.burger');
+let aside = document.querySelector(".aside");
+let asideBg = document.querySelector(".aside_bg");
+
+burgerBtn.addEventListener('click', () => {
+    aside.classList.add('active');
+    asideBg.classList.add('active');
+});
+
+asideBg.addEventListener('click', () => {
+    aside.classList.remove('active');
+    asideBg.classList.remove('active');
+});
+
+
+
 const bodyHidden = () => {
     document.querySelector('body').style.overflow = 'hidden';
 }
