@@ -1414,10 +1414,49 @@ body {
 .dashboard .media_head .dashboard_logo span {
   font-size: 24px;
 }
-.dashboard .media_head .user_link img {
+.dashboard .media_head .user_link .profile-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard .media_head .user_link .profile-progress .circle {
+  position: relative;
+  width: 49px;
+  height: 49px;
+}
+.dashboard .media_head .user_link .profile-progress .circle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49px;
+  height: 49px;
+  transform: rotate(-45deg);
+}
+.dashboard .media_head .user_link .profile-progress .circle svg .bg {
+  fill: none;
+  stroke: #F4F4F4;
+  stroke-width: 3;
+}
+.dashboard .media_head .user_link .profile-progress .circle svg .progress {
+  fill: none;
+  stroke: url(#progressGradient);
+  stroke-width: 3;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 55;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+.dashboard .media_head .user_link .profile-progress .circle img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid transparent;
 }
 .dashboard .line {
   margin: 32px 0;
@@ -1533,6 +1572,14 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .dashboard_content {
+    width: 100%;
+  }
+}
+.dashboard_content.content_full {
+  width: calc(100% - 100px);
+}
+@media screen and (max-width: 1200px) {
+  .dashboard_content.content_full {
     width: 100%;
   }
 }
@@ -1962,6 +2009,9 @@ body {
   flex-direction: column;
   gap: 36px;
 }
+.dashboard .profil.hidden {
+  display: none;
+}
 .dashboard .profil_head {
   display: flex;
   align-items: center;
@@ -2128,6 +2178,50 @@ body {
     align-items: center;
     justify-content: center;
   }
+}
+.dashboard .profile-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard .profile-progress .circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.dashboard .profile-progress .circle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+}
+.dashboard .profile-progress .circle svg .bg {
+  fill: none;
+  stroke: #F4F4F4;
+  stroke-width: 3;
+}
+.dashboard .profile-progress .circle svg .progress {
+  fill: none;
+  stroke: url(#progressGradient);
+  stroke-width: 3;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 55;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+.dashboard .profile-progress .circle img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 6px solid transparent;
 }
 
 .footer {

@@ -1460,10 +1460,53 @@ body {
         }
 
         .user_link {
-            img {
-                width: 35px;
-                height: 35px;
-                border-radius: 50%;
+            .profile-progress {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .circle {
+                    position: relative;
+                    width: 49px;
+                    height: 49px;
+
+                    svg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 49px;
+                        height: 49px;
+                        transform: rotate(-45deg);
+
+                        .bg {
+                            fill: none;
+                            stroke: #F4F4F4;
+                            stroke-width: 3;
+                        }
+
+                        .progress {
+                            fill: none;
+                            stroke: url(#progressGradient);
+                            stroke-width: 3;
+                            stroke-dasharray: 100;
+                            stroke-dashoffset: 55; // 75% progress
+                            stroke-linecap: round;
+                            transition: stroke-dashoffset 0.5s ease;
+                        }
+                    }
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border: 2px solid transparent;
+                    }
+                }
             }
         }
     }
@@ -1627,6 +1670,14 @@ body {
 
         @include media(1200) {
             width: 100%;
+        }
+
+        &.content_full {
+            width: calc(100% - 100px);
+
+            @include media(1200) {
+                width: calc(100%);
+            }
         }
 
         &_head {
@@ -2098,6 +2149,10 @@ body {
         flex-direction: column;
         gap: 36px;
 
+        &.hidden {
+            display: none;
+        }
+
         &_head {
             display: flex;
             align-items: center;
@@ -2287,6 +2342,55 @@ body {
                     align-items: center;
                     justify-content: center;
                 }
+            }
+        }
+    }
+
+    .profile-progress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .circle {
+            position: relative;
+            width: 100px;
+            height: 100px;
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 100px;
+                transform: rotate(-45deg);
+
+                .bg {
+                    fill: none;
+                    stroke: #F4F4F4;
+                    stroke-width: 3;
+                }
+
+                .progress {
+                    fill: none;
+                    stroke: url(#progressGradient);
+                    stroke-width: 3;
+                    stroke-dasharray: 100;
+                    stroke-dashoffset: 55; // 75% progress
+                    stroke-linecap: round;
+                    transition: stroke-dashoffset 0.5s ease;
+                }
+            }
+
+            img {
+                width: 72px;
+                height: 72px;
+                border-radius: 50%;
+                object-fit: cover;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 6px solid transparent;
             }
         }
     }
