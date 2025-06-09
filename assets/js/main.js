@@ -43,10 +43,10 @@ var swiper = new Swiper(".swiperCourse", {
         prevEl: ".course-button-prev",
     },
     breakpoints: {
-        993: {
+        1200: {
         slidesPerView: 2,
         },
-        1200: {
+        1400: {
         slidesPerView: 3,
         },
     },
