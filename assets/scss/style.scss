@@ -1298,6 +1298,11 @@ body {
 
         &.active {
             left: 0;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
 
         &_top {

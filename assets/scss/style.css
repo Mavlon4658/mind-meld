@@ -1308,6 +1308,10 @@ body {
 }
 .dashboard .aside.active {
   left: 0;
+  overflow-y: scroll;
+}
+.dashboard .aside.active::-webkit-scrollbar {
+  display: none;
 }
 @media screen and (max-width: 1200px) {
   .dashboard .aside_top {
