@@ -1275,6 +1275,9 @@ body {
     }
 
     .aside {
+        position: sticky;
+        top: 0;
+        height: 100vh;
         overflow: hidden;
         padding: 50px 26px;
         display: flex;
