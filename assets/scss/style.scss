@@ -1244,7 +1244,7 @@ body {
 
 // dashboard
 .dashboard {
-    overflow: hidden;
+    // overflow: hidden;
 
     .container {
         display: flex;
@@ -1678,6 +1678,7 @@ body {
         padding: 32px 40px;
         background: #F9F4FE;
         transition: .2s ease;
+        overflow: hidden;
 
         @include media(1400) {
             padding: 24px 20px;
