@@ -1248,6 +1248,7 @@ body {
 
     .container {
         display: flex;
+        align-items: start;
         width: 100%;
         max-width: 1920px;
 
@@ -1379,6 +1380,10 @@ body {
                 }
             }
         }
+
+        &:hover ~ .content_full {
+            width: calc(100% - 300px);
+        }
     }
 
     .aside_bottom {
@@ -1444,6 +1449,7 @@ body {
 
         @include media(1200) {
             display: flex;
+            width: 100%;
         }
 
         .container {
@@ -1668,6 +1674,7 @@ body {
         width: calc(100% - 454px - 100px);
         padding: 32px 40px;
         background: #F9F4FE;
+        transition: .2s ease;
 
         @include media(1400) {
             padding: 24px 20px;
